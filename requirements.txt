@@ -1,3 +1,9 @@
+flask
+torch
+transformers
+opencv-python
+numpy
+
 diffusers>=0.32.1
 accelerate>=1.1.1
 transformers>=4.46.2
