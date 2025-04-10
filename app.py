@@ -12,9 +12,9 @@ OUTPUT_FOLDER = 'outputs'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
-# Load dummy CogVideo model (mock for now)
-tokenizer = AutoTokenizer.from_pretrained("THUDM/cogvlm-chat-hf")
-model = AutoModelForCausalLM.from_pretrained("THUDM/cogvlm-chat-hf")
+# Load the model and tokenizer with trust_remote_code=True
+tokenizer = AutoTokenizer.from_pretrained("THUDM/cogvlm-chat-hf", trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained("THUDM/cogvlm-chat-hf", trust_remote_code=True)
 
 @app.route("/")
 def home():
