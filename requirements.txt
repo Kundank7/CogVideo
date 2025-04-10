@@ -3,6 +3,9 @@ torch
 transformers
 opencv-python
 numpy
+imageio
+Pillow
+tqdm
 
 diffusers>=0.32.1
 accelerate>=1.1.1
